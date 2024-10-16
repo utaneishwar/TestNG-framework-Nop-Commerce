@@ -18,64 +18,64 @@ public class RegisterPage extends Pages
 	
 	public WebElementExtension RegisterTab() throws Exception 
 	{
-	    return new WebElementExtension (findElement(By.xpath("//*[@class='header-links']/child::ul/child::li[1]")));
+	    return new WebElementExtension (FindElement(By.xpath("//*[@class='header-links']/child::ul/child::li[1]")));
 	}
 	
 	
 	public WebElementExtension GenderMale() throws Exception 
 	{
-	    return new WebElementExtension (findElement(By.xpath("//*[@id='gender-male']")));
+	    return new WebElementExtension (FindElement(By.xpath("//*[@id='gender-male']")));
 
 	}		
 	
 	public WebElementExtension FirstName() throws Exception 
 	{
-	    return new WebElementExtension (findElement(By.xpath("//*[@id='FirstName']")));
+	    return new WebElementExtension (FindElement(By.xpath("//*[@id='FirstName']")));
 
 	}	
 	
 	public  WebElementExtension LastName() throws Exception 
 	{
-	    return new WebElementExtension (findElement(By.xpath("//*[@id='LastName']")));
+	    return new WebElementExtension (FindElement(By.xpath("//*[@id='LastName']")));
 
 	}	
 	 
 	public WebElementExtension DateOfBirthDay() throws Exception 
 	{
-	    return new WebElementExtension (findElement(By.xpath("//*[@name='DateOfBirthDay']")));
+	    return new WebElementExtension (FindElement(By.xpath("//*[@name='DateOfBirthDay']")));
 	}
 	
 	public WebElementExtension DateOfBirthMonth() throws Exception 
 	{
-	    return new WebElementExtension (findElement(By.xpath("//*[@name='DateOfBirthMonth']")));
+	    return new WebElementExtension (FindElement(By.xpath("//*[@name='DateOfBirthMonth']")));
 
 	}		
 	
 	public WebElementExtension DateOfBirthYear() throws Exception 
 	{
-	    return new WebElementExtension (findElement(By.xpath("//*[@name='DateOfBirthYear']")));
+	    return new WebElementExtension (FindElement(By.xpath("//*[@name='DateOfBirthYear']")));
 
 	}	
 	
 	public  WebElementExtension Email() throws Exception 
 	{
-	    return new WebElementExtension (findElement(By.xpath("//*[@id='Email']")));
+	    return new WebElementExtension (FindElement(By.xpath("//*[@id='Email']")));
 
 	}	
 	
 	public  WebElementExtension Password() throws Exception 
 	{
-	    return new WebElementExtension (findElement(By.xpath("//*[@id='Password']")));
+	    return new WebElementExtension (FindElement(By.xpath("//*[@id='Password']")));
 
 	}
 	public  WebElementExtension ConfirmPassword() throws Exception 
 	{
-	    return new WebElementExtension (findElement(By.xpath("//*[@id='ConfirmPassword']")));
+	    return new WebElementExtension (FindElement(By.xpath("//*[@id='ConfirmPassword']")));
 
 	}
 	public  WebElementExtension Register() throws Exception 
 	{
-	    return new WebElementExtension (findElement(By.xpath("//*[@id='register-button']")));
+	    return new WebElementExtension (FindElement(By.xpath("//*[@id='register-button']")));
 
 	}
 }

@@ -12,10 +12,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Screenshot
 {
 
-	public static File TakeScreenshot(WebDriver driver, String filename) throws IOException
+	public static File  TakeScreenshot(WebDriver driver, String filename) throws IOException
 	{
-		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File file =new File("C:\\Users\\intel\\eclipse-workspace\\RohanTestNgProject\\src\\ScreenShot\\"+filename+".jpg");
+		File source =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File file =new File("C:\\Users\\intel\\eclipse-workspace\\TddFrameworkProject\\Screenshot\\"+filename+".jpg");
 		org.openqa.selenium.io.FileHandler.copy(source, file);
 		return file;
 	}

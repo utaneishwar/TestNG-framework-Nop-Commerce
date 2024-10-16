@@ -21,8 +21,9 @@ public class BaseTest
 	}
 
 	@AfterTest
-	public static void cleanup()
+	public static void cleanup() throws InterruptedException
 	{
-	//	DriverManager.Closedriver();
+		Thread.sleep(5000);
+		DriverManager.Closedriver();
 	}
 }

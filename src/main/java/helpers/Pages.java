@@ -10,7 +10,7 @@ import manager.DriverManager;
 public class Pages
 {
 	public static  WebDriver driver = DriverManager.getdriver();
-	public static WebElement findElement(By by) throws Exception
+	public static WebElement FindElement(By by) throws Exception  // by=By.id, By.xpath
 	{
 		try 
 		{
@@ -18,7 +18,7 @@ public class Pages
 		}
 		catch (Exception e) 
 		{
-			throw new NoSuchElementException(""+driver.findElement(by));
+			throw new NoSuchElementException("Element not found using locator: "+by);
 		}
 	}
 }
